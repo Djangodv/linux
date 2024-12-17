@@ -1,0 +1,60 @@
+!Font selection
+xterm*faceName: DejaVu Sans Mono
+xterm*faceSize: 11
+
+!Allow copying/pasting with ctrl-shift
+xterm*selectToClipboard: true
+
+!Allow bold fonts
+xterm*allowBoldFonts: true
+
+!Precautionary measures
+xterm*metaSendsEscape: True
+xterm*saveLines: 4096
+xterm*termName: xterm-256color
+xterm*locale: true
+
+!Keybinds for copying/pasting
+xterm*VT100.Translations: #override \
+  Ctrl Shift <Key>V: insert-selection(CLIPBOARD) \n\
+  Ctrl Shift <Key>C: copy-selection(CLIPBOARD)
+
+!Terminal theme
+
+! special
+*.foreground:   #bababa
+*.background:   #262626 
+*.cursorColor:  #bababa
+
+! black
+*.color0:       #000000
+*.color8:       #000000
+
+! red
+*.color1:       #bf616a
+*.color9:       #bf616a
+
+! green
+*.color2:       #a3be8c
+*.color10:      #a3be8c
+
+! yellow
+*.color3:       #ebcb8b
+*.color11:      #ebcb8b
+
+! blue
+*.color4:       #81a1c1
+*.color12:      #81a1c1
+
+! magenta
+*.color5:       #b48ead
+*.color13:      #b48ead
+
+! cyan
+*.color6:       #88c0d0
+*.color14:      #8fbcbb
+
+! white
+*.color7:       #e5e9f0
+*.color15:      #eceff4
+
