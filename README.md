@@ -24,7 +24,7 @@ Install graphical applications:
 ```
 ~$ sudo apt install i3 firefox-esr feh
 ```
-Install vim:
+Install git & vim:
 ```
-~$ sudo apt install vim
+~$ sudo apt install vim git
 ```
