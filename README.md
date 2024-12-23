@@ -27,5 +27,4 @@ Install graphical applications:
 Install vim:
 ```
 ~$ sudo apt install vim
-
 ```
