@@ -28,3 +28,8 @@ Install git & vim:
 ```
 ~$ sudo apt install vim git
 ```
+
+Later reference:
+-https://shapeshed.com/vim-statuslines/
+-https://thevaluable.dev/practical-guide-fzf-example/
+-https://omarelhawary.me/blog/faster-directory-navigation-with-fzf/
