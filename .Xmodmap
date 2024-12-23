@@ -1,0 +1,5 @@
+!Clear Caps Lock and use it as mod4
+clear Lock
+keycode 66 = Hyper_L
+add mod4 = Hyper_L
+!Apply settings with: xmodmad ~/.Xmodmap

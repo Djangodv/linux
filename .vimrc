@@ -1,5 +1,7 @@
+"Change default vim key
 "imap jj <Esc>
 
+"Use syntax highlighting
 syntax on
 
 "Use vim instead of vi
@@ -23,7 +25,7 @@ set nowrap
 "Immediately delete backup file upon writing 
 set nobackup
 
-"Test if works?
+"Not sure if this works ***
 "Store undo information after exiting vim
 set undodir=~/.vim/undodir
 set undofile
@@ -36,11 +38,10 @@ set incsearch
 "Show line below cursor
 "set cursorline
 
-
 "Other
 set noerrorbells
 
+"Set a theme
 set termguicolors
 colorscheme slate
 
-":h hi(hglight) to change vim colors

@@ -1,3 +1,7 @@
+!Change screen scaling
+Xft.dpi: 96
+!96dpi quals 100% and 120dpi equals 125% scaling
+
 !Font selection
 xterm*faceName: DejaVu Sans Mono
 xterm*faceSize: 11
