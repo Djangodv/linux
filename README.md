@@ -1,1 +1,6 @@
-# linux
+# Linux setup
+Install sudo:
+```
+~$
+~$
+```
