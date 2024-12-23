@@ -1,0 +1,92 @@
+cp 'file' .: copy file to current dir
+cp -r: copy files recursively(all files including subdirectories)
+cp -a: copy even more(i.e. metadata: times, permission, etc.)
+
+display server: responsible for the graphical user interface(i.e. drawing graphics)
+display manager: graphical login manager that starts an X(xorg) session
+
+/etc/sudoers: suoders security file
+#'user'   ALL=(ALL:ALL) ALL: to give 'user' access to sudo command
+
+su: give current user superuser privileges
+
+sudo apt update: only updates the list of packages
+sudo apt upgrade: installs newer versions of packages
+apt update && apt upgrade: only runs second command if the first one succeeded
+
+sudo apt search 
+sudo apt install
+sudo apt list
+
+sudo apt install firefox-esr: install firefox(extenden support release)
+
+cat 'input': read 'input' and write to terminal
+cat > 'file': create empty file and write input(exit with ctrl-d)
+
+echo Hello World!: display Hello World!
+echo 'text' > file.txt: write 'text' to file.txt
+touch 
+
+sudo apt install xorg: install xorg
+startx: start xorg session
+~/.xinitrc: startup file for xorg
+#by default startx will run ~/.xinitrc otherwise xinitrc in /etc/ is used
+cp /etc/X11/xinit/xinitrc ~/.xinitrc: copy xinitrc to home directory
+~: represent the user's home directory
+
+rm: remove files or directories
+cd: change directory
+
+|, pipeline: pass standard output as standard input to another command
+>, redirect: pass output to a file
+grep: print lines matching pattern
+#if no file is given, recursive searches examine working directory, nonrecursive searches read standard input
+grep "string" 'file': search for "string" in 'file'
+
+man 'command': show manual of specified command
+
+sudo apt list | grep i3-wm: search list of installed packages for i3-wm
+
+kill: send a signal to a process, default is term(terminate) needs a <pid>
+
+ps: displays information about active processes
+top: displays updating list of of all active processes
+-k: kill processes
+-q: quit top
+htop: package to display and manage active processes
+-q: quit
+-/: search for process
+-k: kill process
+
+feh: lightweight image viewer that by default views all images in current directory
+-F: fullscreen
+feh --bg-scale /path/: set background image
+
+~/.Xresources: default config file for xterm
+xrdb .Xresources: load Xresources into the display server
+
+history: list commands history inside ~/.bash_history
+-!'command number': execute previous command
+
+tldr 'command': show tldr of specific command
+
+xrandr: show display configuration
+xrandr --output "HDMI1" --mode 1920x1080: set display to hd resolution
+
+.xinitrc:
+xrandr --output "Virtual1" --mode 1920x1080: set display resolution 
+xrdb -merge .Xresources: load resources file and merge with current settings
+
+$(): command substitution captures output of any command as an argument for another command
+
+fzf: fuzzy finder tool
+vim $(fzf): open specified file in vim
+
+:w "filename": write current file
+
+printenv: print all environment variables currently set
+export 'variable'=value: export 'variable' of value ...
+
+find -name 'file/directory': find file or directory in current directory
+find -type d: search only for directories
+find -type f: search only for files
