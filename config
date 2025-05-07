@@ -1,0 +1,10 @@
+#Default Github
+Host github.com
+    HostName github.com
+    User git
+    IdentityFile C:\Users\User\.ssh\id_ed25519
+
+Host github.com-school
+    HostName github.com
+    User git
+    IdentityFile C:\Users\User\.ssh\id_ed25519_school
