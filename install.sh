@@ -6,15 +6,20 @@ sudo apt update && sudo apt upgrade -y
 
 #Install packages
 packages=(
-	vim git
+	vim git snapd
 )
 
 for package in ${packages[@]}; do
 	sudo apt install ${package} -y
 done
 
+#VSCode
+sudo snap install code --classic
+
 #Add user to sudoers file
 sudo echo "user   ALL=(ALL:ALL) ALL" >> /etc/sudoers
+
+#Desktop environment settings
 
 #Setup dotfiles
 
