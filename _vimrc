@@ -2,30 +2,20 @@
 
 """Settings"""
 
-"Compiling:"
-"C++ files
-autocmd Filetype cpp nnoremap <buffer> <c-space> :!g++ *.cpp -o %< && %<.exe<cr>
+"Working directory:"
 
-"Statusline:"
-":so $VIMRUNTIME/syntax/hitest.vim to see available highlight groups
-set statusline=%#DiffAdd#\ %t\ %m\ %#Folded#\ %F%=%y\ %{&fileencoding?&fileencoding:&encoding}\[%{&fileformat}\]\ %p%%\ 
+"Change working directory
+cd C:\Users\User\Desktop\Files
+
+"Preferences:"
+
 "Always show statusline
 set laststatus=2
-
-"Autocomplete:"
 "Limits pop-up menu to 8 items
 set pumheight=8
 "Auto insert longest common text of all matches
 "Show popup menu even with only one match
 set completeopt=longest,menu
-"Specify location of ctags file
-"set tags+=C:\Users\User\Desktop\tags
-
-"Sessions:"
-"Autosave session upon leaving vim
-autocmd VimLeave * mks! ~\Desktop\Files\session.vim
-
-"Preferences:"
 "Ignore cases when searching
 set ignorecase
 "Hide buffers instead of needing to save
@@ -67,8 +57,6 @@ set tabstop=2 shiftwidth=2
 set autochdir
 "Add <> to the list of pairs matched by the % command
 set matchpairs+=<:>
-"Change working directory
-cd C:\Users\User\Desktop\Files
 
 """Plugins"""
 
@@ -77,17 +65,14 @@ cd C:\Users\User\Desktop\Files
 call plug#begin()
 
 " List your plugins here
-Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'easymotion/vim-easymotion'
 Plug 'tpope/vim-commentary'
 Plug 'airblade/vim-gitgutter'
-Plug 'sirver/ultisnips' | Plug 'honza/vim-snippets'
 Plug 'jiangmiao/auto-pairs' | Plug 'sheerun/vim-polyglot'
 Plug 'mg979/vim-visual-multi'
 Plug 'romainl/vim-cool'
-Plug 'vimwiki/vimwiki'
 
 call plug#end()
 
@@ -98,18 +83,6 @@ let g:fzf_vim = {}
 let g:fzf_vim.preview_window = []
 let g:fzf_layout = { 'down':  '20%'}
 
-"Open preview in a new window
-function! OpenMarkdownPreview(url)
-	  execute "silent ! start firefox --new-window " . a:url
-endfunction
-let g:mkdp_browserfunc = 'OpenMarkdownPreview'
-"Keep previews of different files on one window
-let g:mkdp_combine_preview = 1
-
-"Vimwiki
-let g:vimwiki_list = [{'syntax': 'markdown', 'ext': 'md'}]
-let g:vimwiki_global_ext = 0
-
 """Mappings"""
 
 "Noremap means non-recursive
@@ -118,55 +91,40 @@ let g:vimwiki_global_ext = 0
 
 "Leader:"
 
-"Leader key
 nnoremap <s> <nop>
 let mapleader="s"
 
 "Plugin:"
 
-"unbind easymotion leaderkey
-map <nop> <Plug>(easymotion-prefix)
 "<c-p> unused
 nnoremap <silent> <c-p> :Files ~\Desktop\Files<cr>
-"s substitute character and text
-nmap <leader>f <Plug>(easymotion-s2)
-nmap <leader>d <Plug>(easymotion-bd-w)
-nmap <leader>j <Plug>(easymotion-j)
-nmap <leader>k <Plug>(easymotion-k)
 "<c-/> ?
 map! <c-/> gcc
 nmap <c-/> gcc
 vmap <c-/> gc
-"open markdown preview
-nnoremap <leader>m <Plug>MarkdownPreview
-"nnoremap <nop> <Plug>VimwikiIndex
-nnoremap <leader>ww :new \| :VimwikiIndex<cr>
 
 "Normal:"
 
 noremap! kj <esc>
-noremap! jk <esc>
+"Redundant!?
+"noremap! jk <esc>
 
 "open commandline
 noremap <space> :
 "<c-j> unused
-noremap <silent> <c-j> :term<cr>
+noremap <silent> <c-h> :term<cr>
 "<c-bs> unused
 cnoremap <c-bs> <c-w>
 inoremap <c-bs> <c-w>
 "<s-d> remove till end of line
 nnoremap D dd
 vnoremap D x
-"<c-z> open shell
-noremap <c-z> u
 "open line above/below in normal mode
 nnoremap <cr> o<esc>
 "Q switch to "Ex" mode
 nnoremap Q @q
 "<c-q> unused
 nnoremap <c-q> :q<cr>
-"switch windows
-nnoremap <s-space> <c-w>w
 
 "Standard Editor:"
 
@@ -180,3 +138,4 @@ nnoremap <c-c> yy
 "<c-v> visual block mode
 nnoremap <c-v> p
 inoremap <c-v> <c-o>p
+"<c-n>"
