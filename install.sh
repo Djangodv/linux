@@ -28,7 +28,11 @@ sudo apt remove firefox-esr
 sudo snap install spotify
 
 #Setup desktop environment
-ln -sf "./.themes" "${HOME}"
+#ln -sf "${PWD}/.themes" "${HOME}/.themes"
+#ln -sf "${PWD}/.icons" "${HOME}/.icons"
+ln -sf "${PWD}/.backgrounds" "${HOME}/.backgrounds"
+tar -xf "${PWD}/.theme/.themes.tar.xz" -C "${HOME}"
+tar -xf "${PWD}/.theme/.icons.tar.xz" -C "${HOME}"
 
 
 # Run the SSH script
