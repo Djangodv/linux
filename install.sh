@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-#This script has to be run from the home directory
+#This script has to be run from the root folder of this directory (i.e. ./Github/dotfiles?)
 
 #Update system
 sudo apt update && sudo apt upgrade -y
@@ -28,11 +28,20 @@ sudo apt remove firefox-esr
 sudo snap install spotify
 
 #Setup desktop environment
+#Redundant?
+#ln -sf "${PWD}/.backgrounds" "${HOME}/.backgrounds"
 #ln -sf "${PWD}/.themes" "${HOME}/.themes"
 #ln -sf "${PWD}/.icons" "${HOME}/.icons"
-ln -sf "${PWD}/.backgrounds" "${HOME}/.backgrounds"
 tar -xf "${PWD}/.theme/.themes.tar.xz" -C "${HOME}"
 tar -xf "${PWD}/.theme/.icons.tar.xz" -C "${HOME}"
+
+#dconfo
+#terminal
+#icons
+#theme
+#dark mode X
+#applications
+#background
 
 
 # Run the SSH script
