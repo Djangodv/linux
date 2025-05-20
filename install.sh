@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-#This script has to be run from the root folder of this directory (i.e. ./Github/dotfiles?)
+#This script has to be run from the root folder of this directory (./Github/linux)
 
 #Update system
 sudo apt update && sudo apt upgrade -y
@@ -27,23 +27,25 @@ sudo apt remove firefox-esr
 #Install Spotify
 sudo snap install spotify
 
-#Setup desktop environment
-#Redundant?
-#ln -sf "${PWD}/.backgrounds" "${HOME}/.backgrounds"
-#ln -sf "${PWD}/.themes" "${HOME}/.themes"
-#ln -sf "${PWD}/.icons" "${HOME}/.icons"
+#Cleanup
+sudo apt autoremove -y
+
+#Create symlink for .background
+ln -sf "${PWD}/.backgrounds" "${HOME}/Pictures/.backgrounds"
+
+#Extract theme/icon files in home directory
 tar -xf "${PWD}/.theme/.themes.tar.xz" -C "${HOME}"
 tar -xf "${PWD}/.theme/.icons.tar.xz" -C "${HOME}"
 
-#dconfo
-#terminal
-#icons
-#theme
-#dark mode X
-#applications
-#background
+#Setup desktop environment
 
+#Dconf settings to change:
+#terminal:
+#icons:
+#theme:
+#dark mode:
+#applications:
 
-# Run the SSH script
+#Run the SSH script
 ./ssh.sh
 

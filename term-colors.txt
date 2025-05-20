@@ -1,0 +1,3 @@
+Green: #26A269
+Orange: #F66151
+Yellow: #A2734C
