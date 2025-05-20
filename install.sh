@@ -1,11 +1,11 @@
 #!/usr/bin/env bash
-#This script has to be run from the root folder of this directory (./Github/linux)
+#This script has to be run from ~/Github/linux
+
+#Add user to sudoers file
+su -c "sudo echo 'user   ALL=(ALL:ALL) ALL' >> /etc/sudoers"
 
 #Update system
 sudo apt update && sudo apt upgrade -y
-
-#Add user to sudoers file
-sudo echo "user   ALL=(ALL:ALL) ALL" >> /etc/sudoers
 
 #Install packages
 packages=(
@@ -22,7 +22,7 @@ sudo snap install --classic code
 
 #Install latest Firefox version
 sudo snap install firefox
-sudo apt remove firefox-esr
+sudo apt remove firefox-esr -y
 
 #Install Spotify
 sudo snap install spotify
