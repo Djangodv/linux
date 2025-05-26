@@ -1,0 +1,63 @@
+{
+    // VSCode
+
+    //Focus on terminal after executing a file
+    "terminal.integrated.focusAfterRun": "terminal",
+    //Use tab to cycle through list of completions
+    "editor.tabCompletion": "on",
+    //Autosave files upon changing editor focus
+    "files.autoSave": "onFocusChange",
+    //Open new window horizontally: "down" (default value: "right")
+    "workbench.editor.openSideBySideDirection": "right",
+    //Never ask for confirmation when performing certain actions
+    "security.workspace.trust.untrustedFiles": "open",
+    "explorer.confirmDragAndDrop": false,
+    "explorer.confirmDelete": false,
+    //Never insert a space after commenting code w. <c-/>
+    "editor.comments.insertSpace": false,
+    //Show snippets as first item in autocomplete menu (enables snippet completion w. tab in *.md files)
+    "editor.snippetSuggestions": "top",
+    //Disble annoying hint to start copilot in new empty file
+    "workbench.editor.empty.hint": "hidden",
+    //Visual preferences
+    "window.commandCenter": false,
+    "workbench.layoutControl.enabled": false,
+    "chat.commandCenter.enabled": false,
+    "editor.minimap.enabled": false,
+    "workbench.activityBar.location": "top",
+    "window.menuBarVisibility": "compact",
+
+
+    // Vim 
+
+    //Use a vimrc file for specifying keybindings
+    "vim.vimrc.enable": true,
+    "vim.vimrc.path": "c:\\Users\\User\\_vimrc",
+    
+    //Exceptions for certain keysbindings to be handled by VSCode
+    "vim.handleKeys": {
+        //<c-k> in VSCode is used for a bunch of keyboard shortcuts
+        "<C-k>": false,
+        "<C-j>": false,
+        "<C-p>": false,
+        "<C-b>": false,
+        "<C-h>": false,
+        "<C-w>": false,
+        "<C-y>": false,
+        "<C-a>": false,
+        "<C-v>": false,
+        "<C-c>": false,
+        "<C-z>": false
+    },
+
+    // Extensions
+
+    "code-runner.runInTerminal": true,
+    "code-runner.executorMap": {
+        "cpp": "cd $dir && if ('$fileNameWithoutExt' -like '*sfml') {g++ $fileName -o $fileNameWithoutExt -IC:\\SFML-3.0.0\\include -LC:\\SFML-3.0.0\\lib -lsfml-graphics -lsfml-window -lsfml-system} else {g++ -std=c++14 *.cpp -o $fileNameWithoutExt} && $dir$fileNameWithoutExt",
+    },
+    
+    // Unsorted
+    "workbench.statusBar.visible": false
+
+}

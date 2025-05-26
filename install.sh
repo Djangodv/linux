@@ -49,3 +49,4 @@ tar -xf "${PWD}/.theme/.icons.tar.xz" -C "${HOME}"
 #Run the SSH script
 ./ssh.sh
 
+#Run the VSCode script

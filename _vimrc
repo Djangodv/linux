@@ -112,7 +112,7 @@ noremap! kj <esc>
 "open commandline
 noremap <space> :
 "<c-j> unused
-noremap <silent> <c-h> :term<cr>
+noremap <silent> <c-j> :term<cr>
 "<c-bs> unused
 cnoremap <c-bs> <c-w>
 inoremap <c-bs> <c-w>
