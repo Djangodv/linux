@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-VSCodeConfigDir = 
+CONFDIR="${HOME}/.config/Code/User"
 
 extensions=(
     formulahendry.code-runner
@@ -8,9 +8,13 @@ extensions=(
     vscodevim.vim
     tomoki1207.pdf
     platformio.platformio-ide
+    ms-vscode.cpptools
+    ms-python.python
 )
 
 for extension in ${extensions[@]}; do
     code --install-extension "$extension"
 done
 
+ln -sf "${PWD}/settings.json" "${CONFDIR}/settings.json"
+ln -sf "${PWD}/keybindings.json" "${CONFDIR}/keybindings.json"
