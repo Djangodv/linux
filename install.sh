@@ -2,7 +2,7 @@
 #This script has to be run from ~/Github/linux
 
 #Add user to sudoers file
-su -c "sudo echo '$USER   ALL=(ALL:ALL) ALL' >> /etc/sudoers"
+su -c "sudo echo '${USER}   ALL=(ALL:ALL) ALL' >> /etc/sudoers"
 
 #Update system
 sudo apt update && sudo apt upgrade -y

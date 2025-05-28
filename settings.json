@@ -43,11 +43,9 @@
         "<C-b>": false,
         "<C-h>": false,
         "<C-w>": false,
-        "<C-y>": false,
         "<C-a>": false,
         "<C-v>": false,
-        "<C-c>": false,
-        "<C-z>": false
+        "<C-c>": false
     },
 
     // Extensions
