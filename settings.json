@@ -27,12 +27,11 @@
     "workbench.activityBar.location": "top",
     "window.menuBarVisibility": "compact",
 
-
     // Vim 
+
 
     //Use a vimrc file for specifying keybindings
     "vim.vimrc.enable": true,
-    "vim.vimrc.path": "c:\\Users\\User\\_vimrc",
     
     //Exceptions for certain keysbindings to be handled by VSCode
     "vim.handleKeys": {
