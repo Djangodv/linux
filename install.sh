@@ -9,7 +9,7 @@ sudo apt update && sudo apt upgrade -y
 
 #Install packages
 packages=(
-	vim git snapd
+	vim git snapd curl
 )
 
 for package in ${packages[@]}; do

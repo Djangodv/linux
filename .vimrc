@@ -5,7 +5,7 @@
 "Working directory:"
 
 "Change working directory
-cd C:\Users\User\Desktop\Files
+"cd C:\Users\User\Desktop\Files
 
 "Preferences:"
 
@@ -44,7 +44,7 @@ set wildmode=longest:full,full
 set nowrap
 "Set theme
 set termguicolors
-colorscheme morning
+colorscheme habamax
 "Store undo information after exiting vim
 set undodir=~\.vim\undodir
 set undofile
