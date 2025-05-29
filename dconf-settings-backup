@@ -1,0 +1,112 @@
+[org/gnome/control-center]
+last-panel='background'
+window-state=(980, 640, false)
+
+[org/gnome/desktop/background]
+color-shading-type='solid'
+picture-options='zoom'
+picture-uri='file:///home/vboxuser/.local/share/backgrounds/2025-05-29-10-04-38-pexels-eberhardgross-1612353.jpg'
+picture-uri-dark='file:///home/vboxuser/.local/share/backgrounds/2025-05-29-10-04-38-pexels-eberhardgross-1612353.jpg'
+primary-color='#000000000000'
+secondary-color='#000000000000'
+
+[org/gnome/desktop/interface]
+color-scheme='prefer-dark'
+font-antialiasing='grayscale'
+font-hinting='slight'
+gtk-theme='Fluent-Dark-compact'
+icon-theme='Tela-dark'
+show-battery-percentage=true
+toolkit-accessibility=false
+
+[org/gnome/desktop/notifications]
+show-banners=true
+show-in-lock-screen=false
+
+[org/gnome/desktop/peripherals/touchpad]
+two-finger-scrolling-enabled=true
+
+[org/gnome/desktop/privacy]
+disable-camera=true
+disable-microphone=true
+old-files-age=uint32 30
+recent-files-max-age=-1
+remove-old-temp-files=true
+remove-old-trash-files=true
+
+[org/gnome/desktop/screensaver]
+color-shading-type='solid'
+picture-options='zoom'
+picture-uri='file:///home/vboxuser/.local/share/backgrounds/2025-05-29-10-04-38-pexels-eberhardgross-1612353.jpg'
+primary-color='#000000000000'
+secondary-color='#000000000000'
+
+[org/gnome/desktop/search-providers]
+sort-order=['org.gnome.Contacts.desktop', 'org.gnome.Documents.desktop', 'org.gnome.Nautilus.desktop']
+
+[org/gnome/desktop/session]
+idle-delay=uint32 300
+
+[org/gnome/desktop/sound]
+event-sounds=true
+theme-name='__custom'
+
+[org/gnome/desktop/wm/preferences]
+num-workspaces=3
+
+[org/gnome/mutter]
+dynamic-workspaces=false
+
+[org/gnome/nautilus/preferences]
+default-folder-viewer='icon-view'
+migrated-gtk-settings=true
+search-filter-time-type='last_modified'
+
+[org/gnome/nautilus/window-state]
+initial-size=(890, 550)
+
+[org/gnome/settings-daemon/plugins/color]
+night-light-enabled=true
+night-light-schedule-automatic=false
+night-light-temperature=uint32 1700
+
+[org/gnome/settings-daemon/plugins/media-keys]
+home=['<Super>e']
+
+[org/gnome/shell]
+app-picker-layout=[{'org.gnome.TwentyFortyEight.desktop': <{'position': <0>}>, 'org.gnome.Contacts.desktop': <{'position': <1>}>, 'org.gnome.Weather.desktop': <{'position': <2>}>, 'org.gnome.clocks.desktop': <{'position': <3>}>, 'org.gnome.Maps.desktop': <{'position': <4>}>, 'sol.desktop': <{'position': <5>}>, 'org.gnome.Calendar.desktop': <{'position': <6>}>, 'org.gnome.Totem.desktop': <{'position': <7>}>, 'org.gnome.Calculator.desktop': <{'position': <8>}>, 'org.gnome.Chess.desktop': <{'position': <9>}>, 'simple-scan.desktop': <{'position': <10>}>, 'org.gnome.Settings.desktop': <{'position': <11>}>, 'gnome-system-monitor.desktop': <{'position': <12>}>, 'org.gnome.Extensions.desktop': <{'position': <13>}>, 'org.gnome.five-or-more.desktop': <{'position': <14>}>, 'org.gnome.Characters.desktop': <{'position': <15>}>, 'org.gnome.Four-in-a-row.desktop': <{'position': <16>}>, 'org.gnome.Hitori.desktop': <{'position': <17>}>, 'libreoffice-writer.desktop': <{'position': <18>}>, 'org.gnome.Evolution.desktop': <{'position': <19>}>, 'org.gnome.TextEditor.desktop': <{'position': <20>}>, 'org.gnome.Nautilus.desktop': <{'position': <21>}>, 'org.gnome.Cheese.desktop': <{'position': <22>}>}, {'org.gnome.font-viewer.desktop': <{'position': <0>}>, 'im-config.desktop': <{'position': <1>}>, 'org.gnome.Klotski.desktop': <{'position': <2>}>, 'libreoffice-calc.desktop': <{'position': <3>}>, 'libreoffice-draw.desktop': <{'position': <4>}>, 'libreoffice-impress.desktop': <{'position': <5>}>, 'libreoffice-startcenter.desktop': <{'position': <6>}>, 'org.gnome.LightsOff.desktop': <{'position': <7>}>, 'org.gnome.Mahjongg.desktop': <{'position': <8>}>, 'org.gnome.Mines.desktop': <{'position': <9>}>, 'org.gnome.Music.desktop': <{'position': <10>}>, 'org.gnome.Nibbles.desktop': <{'position': <11>}>, 'org.gnome.Quadrapassel.desktop': <{'position': <12>}>, 'org.gnome.Reversi.desktop': <{'position': <13>}>, 'org.gnome.Rhythmbox3.desktop': <{'position': <14>}>, 'org.gnome.Robots.desktop': <{'position': <15>}>, 'shotwell.desktop': <{'position': <16>}>, 'software-properties-gtk.desktop': <{'position': <17>}>, 'org.gnome.SoundRecorder.desktop': <{'position': <18>}>, 'org.gnome.Sudoku.desktop': <{'position': <19>}>, 'org.gnome.SwellFoop.desktop': <{'position': <20>}>, 'synaptic.desktop': <{'position': <21>}>, 'org.gnome.Tali.desktop': <{'position': <22>}>, 'org.gnome.Taquin.desktop': <{'position': <23>}>}, {'org.gnome.Tetravex.desktop': <{'position': <0>}>, 'transmission-gtk.desktop': <{'position': <1>}>, 'nm-connection-editor.desktop': <{'position': <2>}>, 'org.gnome.FileRoller.desktop': <{'position': <3>}>, 'org.gnome.baobab.desktop': <{'position': <4>}>, 'org.gnome.DiskUtility.desktop': <{'position': <5>}>, 'org.gnome.Evince.desktop': <{'position': <6>}>, 'org.gnome.eog.desktop': <{'position': <7>}>, 'org.gnome.Logs.desktop': <{'position': <8>}>, 'org.gnome.seahorse.Application.desktop': <{'position': <9>}>, 'org.gnome.tweaks.desktop': <{'position': <10>}>, 'org.gnome.Software.desktop': <{'position': <11>}>, 'yelp.desktop': <{'position': <12>}>}]
+favorite-apps=['code_code.desktop', 'firefox_firefox.desktop', 'org.gnome.Terminal.desktop', 'spotify_spotify.desktop']
+
+[org/gnome/shell/app-switcher]
+current-workspace-only=true
+
+[org/gnome/shell/world-clocks]
+locations=@av []
+
+[org/gnome/terminal/legacy/profiles:/:b1dcc9dd-5262-4d8d-a863-c897e6d979b9]
+audible-bell=false
+background-color='rgb(0,43,54)'
+foreground-color='rgb(131,148,150)'
+palette=['rgb(7,54,66)', 'rgb(220,50,47)', 'rgb(38,162,105)', 'rgb(162,115,76)', 'rgb(38,139,210)', 'rgb(211,54,130)', 'rgb(42,161,152)', 'rgb(238,232,213)', 'rgb(0,43,54)', 'rgb(246,97,81)', 'rgb(88,110,117)', 'rgb(101,123,131)', 'rgb(131,148,150)', 'rgb(108,113,196)', 'rgb(147,161,161)', 'rgb(253,246,227)']
+use-theme-colors=true
+visible-name='Unnamed'
+
+[org/gtk/gtk4/settings/file-chooser]
+date-format='regular'
+location-mode='path-bar'
+show-hidden=true
+show-size-column=true
+show-type-column=true
+sidebar-width=140
+sort-column='name'
+sort-directories-first=false
+sort-order='ascending'
+type-format='category'
+window-size=(859, 327)
+
+[org/gtk/settings/color-chooser]
+custom-colors=[(0.63529411764705879, 0.45098039215686275, 0.29803921568627445, 1.0), (0.63529411764705879, 0.45098039215686275, 0.29803921568627451, 1.0), (0.70980392156862748, 0.53725490196078429, 0.0, 1.0), (0.9137254901960784, 0.67843137254901953, 0.047058823529411702, 1.0), (0.9137254901960784, 0.67843137254901964, 0.047058823529411764, 1.0), (0.79607843137254897, 0.29411764705882359, 0.086274509803921637, 1.0), (0.79607843137254897, 0.29411764705882354, 0.086274509803921567, 1.0), (0.14901960784313728, 0.63529411764705879, 0.41176470588235276, 1.0)]
+selected-color=(true, 0.63529411764705879, 0.45098039215686275, 0.29803921568627445, 1.0)
+
+[system/proxy]
+mode='none'
