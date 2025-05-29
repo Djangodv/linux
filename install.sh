@@ -50,3 +50,7 @@ tar -xf "${PWD}/.theme/.icons.tar.xz" -C "${HOME}"
 ./ssh.sh
 
 #Run the VSCode script
+./vscode.sh
+
+#Run the Vim script
+./vim.sh

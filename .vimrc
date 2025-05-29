@@ -132,9 +132,10 @@ noremap <c-s> :w<cr>
 vnoremap <c-c> "*y
 "<c-n> unused
 noremap <c-n> :enew<cr>
+"<c-z> open shell
+noremap <c-z> u
 
-"Unbinded: "
+"Unbinded:"
 
 "<c-v> visual block mode
 "<c-q> unused
-noremap <c-z> u
